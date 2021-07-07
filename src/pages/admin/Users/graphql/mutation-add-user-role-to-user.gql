@@ -1,0 +1,10 @@
+mutation addToRoleOnUser($id1: ID!, $id2: ID!) {
+  addTo_RoleOnUser(rolesUserRoleId: $id1, rolesUserId: $id2) {
+    rolesUserRole {
+      id
+    }
+    usersUser {
+      id
+    }
+  }
+}

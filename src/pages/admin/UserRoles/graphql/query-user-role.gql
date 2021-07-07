@@ -1,0 +1,6 @@
+query userRole($id: ID) {
+  UserRole(id: $id) {
+    id
+    name
+  }
+}

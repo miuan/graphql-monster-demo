@@ -1,0 +1,5 @@
+mutation removeUserRole($id: ID!) {
+  removeUserRole(id: $id) {
+    id
+  }
+}

@@ -1,0 +1,12 @@
+fragment loginRegisterFragment on UserToken {
+  token
+  refreshToken
+  user {
+    id
+    email
+    verified
+    roles {
+      name
+    }
+  }
+}

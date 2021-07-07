@@ -1,0 +1,13 @@
+
+span {
+    padding-right: 5px
+}
+
+.row { 
+    display: flex; 
+    justify-content: space-between;
+  }
+
+.id {
+    font-size: smaller;
+}

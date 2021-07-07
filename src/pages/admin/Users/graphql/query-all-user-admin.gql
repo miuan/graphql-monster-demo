@@ -1,0 +1,6 @@
+#import "./fragment-all-user-admin.gql"
+query allUser($filter: UserFilter) {
+  allUser(filter: $filter) {
+    ...FragmentAllUserAdmin
+  }
+}

@@ -1,0 +1,19 @@
+.select-option > button, .select-option > button:hover, .select-option > button:checked {
+
+    background-color: white;
+    border-width: 0px; 
+    color: gray;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left:1px
+}
+
+.field-option1 > button, .field-option1 > button:hover {
+
+    background-color: green ;
+    border-width: 0px; 
+    color: white;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left:1px
+}

@@ -1,0 +1,21 @@
+
+
+.row-head { 
+    padding:5px;
+    display: flex; 
+    justify-content: space-between;
+  }
+
+  .row-head > div:last-child {
+      padding-left: 10px;
+      width: 145px;
+      text-align: right;
+  }
+
+  .row-head > div:first-child {
+    padding-right: 10px
+}
+
+.row-table {
+    padding: 5px;
+}

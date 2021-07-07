@@ -1,0 +1,9 @@
+fragment FragmentAllUserAdmin on UserModel {
+  id
+  email
+  password
+  roles {
+    id
+    name
+  }
+}

@@ -1,0 +1,7 @@
+#import "./login-register-fragment.gql"
+
+  mutation Login($email: String!, $pass: String!) {
+    login_v1(email: $email, password:$pass) {
+      ...loginRegisterFragment
+    }
+}

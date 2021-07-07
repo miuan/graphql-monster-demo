@@ -1,0 +1,6 @@
+query allUserRole($filter: UserRoleFilter) {
+  allUserRole(filter: $filter) {
+    id
+    name
+  }
+}

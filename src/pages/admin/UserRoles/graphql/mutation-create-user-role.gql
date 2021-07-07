@@ -1,0 +1,6 @@
+mutation createUserRole($name: String!) {
+  createUserRole(name: $name) {
+    id
+    name
+  }
+}
