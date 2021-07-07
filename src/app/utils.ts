@@ -62,10 +62,9 @@ export const passwordStrong = (password: string):IPasswordStrongResult => {
 }
 
 export type TUploadFileCallback = (err: any, data: any)=>void | null | undefined
-export const uploadFile = (name='files') => async (event: React.FormEvent<HTMLInputElement>, callback:TUploadFileCallback|null| undefined = undefined) => {
+export const uploadFile = (name='files') => async (file: any, callback:TUploadFileCallback|null| undefined = undefined) => {
   const userToken = localStorage.getItem('user.token')
-  const files = event.currentTarget?.files || []
-  const file = files[0]
+
 
   const data = new FormData()
   data.append('file', file)

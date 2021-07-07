@@ -86,7 +86,7 @@ const Posts = () => {
       <hr />
       <h4>Posts</h4>
       {
-        data?.allPost_v2?.map((post: any, idx: number) => (
+        data?.allPost?.map((post: any, idx: number) => (
           <div className="post" key={idx}>
             <div className="hightligtedText" style={{ backgroundColor: post.color }}>
               {post.text}
