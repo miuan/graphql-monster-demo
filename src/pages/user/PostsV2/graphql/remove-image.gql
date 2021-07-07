@@ -1,0 +1,5 @@
+mutation RemoveImage($id: ID!) {
+    removeFile(id: $id) {
+        id
+    }
+}

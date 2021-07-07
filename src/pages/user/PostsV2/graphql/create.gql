@@ -1,0 +1,8 @@
+mutation CreatePost($text: String!, $color: String, $imagesIds: [ID]) {
+    createPost_v2(text: $text, color: $color, imagesIds: $imagesIds) {
+        id
+        text,
+        color,
+        images{id, publicKey}
+    }
+}

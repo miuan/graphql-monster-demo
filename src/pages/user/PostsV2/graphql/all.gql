@@ -1,0 +1,9 @@
+{
+    allPost_v2(orderBy: createdAt_desc){
+        id,
+        text,
+        color,
+        images{publicKey,id}
+        user{email}
+    }
+}

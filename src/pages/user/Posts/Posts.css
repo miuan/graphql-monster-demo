@@ -1,0 +1,84 @@
+.postsPage {
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+
+}
+
+.colorPicker{
+  width: 50px;
+  margin-right: 5px;
+}
+
+.photoButton {
+  margin-top: 7px;
+  font-size: 0.8em;
+  color:white;
+  cursor: pointer;
+  color: black;
+  border-radius: 3px;
+  padding: 10px 40px 10px 40px;
+  border-width: 1px;
+  border-color: lightgray;
+  border-style: solid;
+}
+
+.photoButton:hover {
+  color: black;
+  border-width: 1px;
+  border-color: gray;
+  border-style: solid;
+  background-color: white;
+  padding: 10px 40px 10px 40px;
+}
+
+.image {
+  width: 92px;
+  height: 92px;
+}
+
+.imagePreviews {
+  margin-bottom: 12px;
+  background-color:#404040;
+  padding: 9px;
+}
+
+.removePreview{
+  margin-right: 6px;
+  height: 100px;
+  
+}
+
+.removePreview > div {
+  border-radius: 2px;
+}
+
+.removePreview > span{
+  font-size: 0.9em;
+  padding:7px;
+  font:bold;
+  color: white;
+  position: relative;
+  top:-30px;
+  left: 75px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.removePreview > span:hover {
+  color: red
+}
+
+.post {
+  margin-top: 20px;
+  margin: 10px;
+}
+
+.hightligtedText {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  padding: 60px 0px 60px 0px;
+  border-radius: 8px;
+}

@@ -11,7 +11,7 @@ const UserHeader = ({ user, onLogout }: any) => (<div className="header-light tr
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
-          <Dropdown.Item href="/">Home</Dropdown.Item>
+          <Dropdown.Item ><Link to="/" >Home</Link></Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     </div>

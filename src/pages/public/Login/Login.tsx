@@ -72,6 +72,10 @@ export const Login: React.FC = () => {
                             <form action='blank.php' className="row" id='form_subscribe' method="post" name="myForm">
                                 <div className="col-md-12 text-center">
                                     <h1>User Login</h1>
+                                    <pre>
+                                        user: test@graphql.monster
+                                        password: test@graphql.monster
+                                    </pre>
                                     <p>We was missed you already</p>
                                     {role && <Alert variant={'warning'}>You trying to reach part what is under registered user with <b>{role}</b> role protection. <Link to={'/'} onClick={onBackClick}>Please take me back</Link></Alert>}
                                     {(!role && path) && <Alert variant={'warning'}>You trying to reach part what is under registered user protection. <Link to={'/'} onClick={onBackClick}>Please take me back</Link></Alert>}

@@ -12,6 +12,8 @@ import Login from "./pages/public/Login/Login";
 import { PassportCallback } from "./pages/public/Login/PassportCallback";
 import Register from "./pages/public/Login/Register";
 import VerifyUser from "./pages/public/Login/VerifyUser";
+import Posts from "./pages/user/Posts/Posts";
+import PostsV2 from "./pages/user/PostsV2/PostsV2";
 import UserDashboard from "./pages/user/UserDashboard/UserDashboard";
 
 export default function App() {
@@ -29,6 +31,13 @@ export default function App() {
         <Route exact path="/">
           <Home />
         </Route>
+        <ProtectedRoute exact path="/posts">
+          <Posts />
+        </ProtectedRoute >
+        <ProtectedRoute exact path="/postsV2">
+          <PostsV2 />
+        </ProtectedRoute >
+
         <Route exact path="/login">
           <Login />
         </Route>

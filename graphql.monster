@@ -1,0 +1,21 @@
+@all("public")
+@create("user")
+@remove("public")
+model Post {
+    text: String
+    color: String
+}
+
+@all("public")
+@create("user")
+@remove("user")
+model Post_v2 {
+    text: String!
+    color: String @default("#FFFFFF")
+    images: [@relation("PostV2OnFiles")]
+}
+
+@remove("owner")
+model File {
+    posts_v2: [@relation("PostV2OnFiles")]
+}
