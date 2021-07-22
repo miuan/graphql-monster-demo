@@ -14,6 +14,7 @@ import Register from "./pages/public/Login/Register";
 import VerifyUser from "./pages/public/Login/VerifyUser";
 import Posts from "./pages/user/Posts/Posts";
 import PostsV2 from "./pages/user/PostsV2/PostsV2";
+import { Todo } from "./pages/user/Todo/Todo";
 import UserDashboard from "./pages/user/UserDashboard/UserDashboard";
 
 export default function App() {
@@ -28,9 +29,8 @@ export default function App() {
               of them to render at a time
             */}
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
+
+        <ProtectedRoute path="/todo"><Todo /></ProtectedRoute>
         <ProtectedRoute exact path="/posts">
           <Posts />
         </ProtectedRoute >
@@ -38,6 +38,9 @@ export default function App() {
           <PostsV2 />
         </ProtectedRoute >
 
+        <Route exact path="/">
+          <Home />
+        </Route>
         <Route exact path="/login">
           <Login />
         </Route>

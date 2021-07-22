@@ -60,7 +60,7 @@ const Posts = () => {
     setPostForRemoveId(id)
   }
 
-  const onDelete: IDeleteModalParams['onDelete'] = async (id) => {
+  const onDelete: IDeleteModalParams['onDelete'] = async ({ id }) => {
     const postForRemove = data?.allPost_v2.find((p: any) => p.id === id)
     await removePost({ variables: { id } })
 
@@ -187,7 +187,7 @@ const Posts = () => {
         ))
       }
 
-      <a href={'https://github.com/miuan/fawesome/blob/37f894d8c62874f1c436e676f87d96e49b57d4e9/src/pages/user/Posts/Posts.tsx'} target={'_blank'}>Source code</a>
+      <a href={'https://github.com/miuan/graphql-monster-demo/blob/main/src/pages/user/PostsV2/PostsV2.tsx'} target={'_blank'}>Source code</a>
 
       <DeleteModal
         show={!!postForRemoveId}

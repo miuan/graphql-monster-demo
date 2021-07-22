@@ -13,6 +13,7 @@ function Home() {
           user: test@graphql.monster
           password: test@graphql.monster
         </pre>
+        <Link to="/todo"> Todo</Link>
         <Link to="/posts"> Posts (without photos)</Link>
         <Link to="/postsV2"> Posts V2 (with photos)</Link>
       </header>

@@ -2,7 +2,7 @@
   "name": "graphql-monster-demo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://miuan.github.io/graphql-monster-demo/",
+  "homepage": "https://demo.graphql.monster",
   "dependencies": {
     "@apollo/client": "^3.3.15",
     "@reduxjs/toolkit": "^1.5.1",

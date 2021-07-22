@@ -43,7 +43,7 @@ const Posts = () => {
     setText('')
     const variables = { text, color } as any
     await createPost({ variables })
-    refetch()
+    await refetch()
   }
 
   if (loading) {
@@ -95,7 +95,7 @@ const Posts = () => {
         ))
       }
 
-      <a href={'https://github.com/miuan/fawesome/blob/37f894d8c62874f1c436e676f87d96e49b57d4e9/src/pages/user/Posts/Posts.tsx'} target={'_blank'} rel="noreferrer">Source code</a>
+      <a href={'https://github.com/miuan/graphql-monster-demo/blob/main/src/pages/user/Posts/Posts.tsx'} target={'_blank'} rel="noreferrer">Source code</a>
 
     </div >
   )
